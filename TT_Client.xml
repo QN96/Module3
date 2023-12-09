@@ -1,5 +1,5 @@
  <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Module3" verbose="1">
+<suite name="Client" verbose="1">
 <test thread-count="5" name="ChromeTest">
     <parameter name="browserType" value="chrome"></parameter>
     <parameter name="appURL" value="https://rise.fairsketch.com"></parameter>
