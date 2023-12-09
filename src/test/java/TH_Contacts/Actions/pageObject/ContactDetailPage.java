@@ -12,9 +12,11 @@ public class ContactDetailPage {
     public static void Detail(WebDriver driver) {
         basePage.clickToElement(driver, ContactDetailPageUI.Contacts);
 
-        String totalClientsText = basePage.getElementText(driver, ContactDetailPageUI.Total_Contacts);
-        String lastPart = totalClientsText.split("/")[1].trim();
-
-        System.out.println("Total Contact: " + lastPart);
+        basePage.scrollToBottomPage(driver);
+        basePage.waitForElementVisible(driver, ContactDetailPageUI.Total_Contacts);
+        String totalContactsText = basePage.getElementText(driver, ContactDetailPageUI.Total_Contacts);
+        String[] substrings = totalContactsText.split(" ");
+        String lastPart = substrings[substrings.length - 1];
+        System.out.println("Total contacts: " + lastPart);
     }
 }

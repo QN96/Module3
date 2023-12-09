@@ -25,7 +25,7 @@ public class TC01_ReadFromExcel extends BaseTest {
     public void Test_Login() throws Exception {
         //Setup đường dẫn của file excel
         ExcelHelpers excel=new ExcelHelpers();
-        excel.setExcelFile("src/test/java/luyentap2_POM/TestData/Login.xlsx", "Sheet1");
+        excel.setExcelFile("src/test/java/BT_CreateTask/TestData/Login.xlsx", "Sheet1");
         LoginPage.Login(driver, excel.getCellData("username",1),excel.getCellData("password",1));
         Thread.sleep(1000);
     }
