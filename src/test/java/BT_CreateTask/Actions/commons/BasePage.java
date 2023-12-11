@@ -153,6 +153,7 @@ public class BasePage {
         getElement(driver,xpathExpression).sendKeys(value);
     }
 
+
     public String getElementText(WebDriver driver, String xpathExpression){
         //return driver.findElement(By.xpath(xpathExpression)).getText();
         return getElement(driver,xpathExpression).getText();

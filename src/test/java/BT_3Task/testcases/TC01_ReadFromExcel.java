@@ -35,24 +35,36 @@ public class TC01_ReadFromExcel extends BaseTest {
         HomePage.Home(driver);
     }
     @Test (priority = 2)
-    public void Test_Task() throws InterruptedException {
-        TaskPage.Task(driver, "Bug 1", "Bug không login được", "23-11-2023", "24-11-2023" );
+    public void Test_task1() throws Exception {
+        //Setup đường dẫn của file excel
+        ExcelHelpers excel=new ExcelHelpers();
+        excel.setExcelFile("src/test/java/BT_3Task/TestData/Task.xlsx", "Sheet1");
+        TaskPage.Task(driver, excel.getCellData("title",1),excel.getCellData("description",1),excel.getCellData("start",1),excel.getCellData("deadline",1));
+        Thread.sleep(1000);
     }
     @Test (priority = 3)
     public void Test_Home1() throws InterruptedException {
         HomePage.Home(driver);
     }
     @Test (priority = 4)
-    public void Test_Task1() throws InterruptedException {
-        TaskPage.Task(driver, "Bug 2", "Bug không login được", "23-11-2023", "24-11-2023" );
+    public void Test_task2() throws Exception {
+        //Setup đường dẫn của file excel
+        ExcelHelpers excel=new ExcelHelpers();
+        excel.setExcelFile("src/test/java/BT_3Task/TestData/Task.xlsx", "Sheet1");
+        TaskPage.Task(driver, excel.getCellData("title",2),excel.getCellData("description",2),excel.getCellData("start",2),excel.getCellData("deadline",2));
+        Thread.sleep(1000);
     }
     @Test (priority = 5)
     public void Test_Home2() throws InterruptedException {
         HomePage.Home(driver);
     }
     @Test (priority = 6)
-    public void Test_Task2() throws InterruptedException {
-        TaskPage.Task(driver, "Bug 3", "Bug không login được", "23-11-2023", "24-11-2023" );
+    public void Test_task3() throws Exception {
+        //Setup đường dẫn của file excel
+        ExcelHelpers excel=new ExcelHelpers();
+        excel.setExcelFile("src/test/java/BT_3Task/TestData/Task.xlsx", "Sheet1");
+        TaskPage.Task(driver, excel.getCellData("title",3),excel.getCellData("description",3),excel.getCellData("start",3),excel.getCellData("deadline",3));
+        Thread.sleep(1000);
     }
 
     @AfterClass

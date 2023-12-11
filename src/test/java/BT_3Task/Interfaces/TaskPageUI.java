@@ -1,7 +1,5 @@
 package BT_3Task.Interfaces;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -17,11 +15,11 @@ public class TaskPageUI {
     public static String click_add = "//a[text()=' Add task']";
     public static String add_title = "//input[@id='title']";
     public static String add_Description = "//textarea[@id='description']";
-    public static String click_Related = "//label[text()='Related to']/following::div[@id='s2id_task-context']";
+    public static String click_Related = "//label[text()='Related to']/following::div[@id='s2id_task-context']/a";
     public static String select_Related = "//div[text()='Client']";
-    public static String click_Contract = "//label[text()='Related to']/following::div[@id='s2id_client_id']";
-    public static String select_Contract = "//div[text()='Demo Client']";
-    public static String click_Point = "//label[text()='Points                        ']/following::div[@id='s2id_autogen18']";
+    public static String click_Contract = "//label[text()='Related to']/following::div[@id='s2id_client_id']/a";
+    public static String select_Contract = "//div[text()='Zoila Hauck']";
+    public static String click_Point = "//label[contains(text(), 'Points')]/following-sibling::div";
     public static String select_Point = "//div[text()='2 Points']";
     public static String click_Assign = "//label[text()='Assign to']/following::div[@id='s2id_assigned_to']";
     public static String select_Assign = "//div[text()='Michael Wood']";

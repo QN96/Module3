@@ -22,7 +22,7 @@ public class TC01_Config extends BaseTest {
     }
 
     @Test (priority = 0)
-    public void Test_Login() {
+    public void Test_login() throws InterruptedException {
         LoginPage.Login(driver, PropertiesFile.getPropValue("username"), PropertiesFile.getPropValue("password"));
     }
 
@@ -31,24 +31,26 @@ public class TC01_Config extends BaseTest {
         HomePage.Home(driver);
     }
     @Test (priority = 2)
-    public void Test_Task() throws InterruptedException {
-        TaskPage.Task(driver, "Bug 1", "Bug không login được", "23-11-2023", "24-11-2023" );
+    public void Test_case_01() throws InterruptedException {
+        TaskPage.Task(driver, PropertiesFile.getPropValue("title1"), PropertiesFile.getPropValue("description1"), PropertiesFile.getPropValue("start1"), PropertiesFile.getPropValue("deadline1") );
     }
     @Test (priority = 3)
-    public void Test_Home1() throws InterruptedException {
+    public void Test_Home1() {
         HomePage.Home(driver);
     }
+
     @Test (priority = 4)
-    public void Test_Task1() throws InterruptedException {
-        TaskPage.Task(driver, "Bug 2", "Bug không login được", "23-11-2023", "24-11-2023" );
+    public void Test_case_02() throws InterruptedException {
+        TaskPage.Task(driver, PropertiesFile.getPropValue("title2"), PropertiesFile.getPropValue("description2"), PropertiesFile.getPropValue("start2"), PropertiesFile.getPropValue("deadline2") );
     }
     @Test (priority = 5)
-    public void Test_Home2() throws InterruptedException {
+    public void Test_Home2() {
         HomePage.Home(driver);
     }
+
     @Test (priority = 6)
-    public void Test_Task2() throws InterruptedException {
-        TaskPage.Task(driver, "Bug 3", "Bug không login được", "23-11-2023", "24-11-2023" );
+    public void Test_case_03() throws InterruptedException {
+        TaskPage.Task(driver, PropertiesFile.getPropValue("title3"), PropertiesFile.getPropValue("description3"), PropertiesFile.getPropValue("start3"), PropertiesFile.getPropValue("deadline3") );
     }
 
     @AfterClass

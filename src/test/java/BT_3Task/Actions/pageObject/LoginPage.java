@@ -3,7 +3,7 @@ package BT_3Task.Actions.pageObject;
 
 import BT_3Task.Actions.commons.BasePage;
 import org.openqa.selenium.WebDriver;
-import BT_CreateTask.Interfaces.LoginPageUI;
+import BT_3Task.Interfaces.LoginPageUI;
 
 public class LoginPage {
 

@@ -1,0 +1,36 @@
+{
+  "RISE_Login_001_Correct": [
+    {
+      "username": "admin@demo.com",
+      "password": "riseDemo"
+    },
+    {
+      "username1": "client@demo.com",
+      "password1": "riseDemo"
+    }
+  ],
+  "Test_case_01": [
+    {
+      "title": "bug 1",
+      "description": "riseDemo",
+      "start": "12-12-2023",
+      "deadline": "13-12-2023"
+    }
+  ],
+  "Test_case_02": [
+    {
+      "title": "bug 2",
+      "description": "riseDemo",
+      "start": "12-12-2023",
+      "deadline": "13-12-2023"
+    }
+  ],
+  "Test_case_03": [
+    {
+      "title": "bug 3",
+      "description": "riseDemo",
+      "start": "12-12-2023",
+      "deadline": "13-12-2023"
+    }
+  ]
+}

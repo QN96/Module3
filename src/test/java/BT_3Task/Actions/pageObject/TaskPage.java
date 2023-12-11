@@ -4,9 +4,6 @@ import BT_3Task.Actions.commons.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import BT_3Task.Interfaces.TaskPageUI;
-import org.openqa.selenium.support.ui.WebDriverWait;
-
-import java.time.Duration;
 
 public class TaskPage {
     private static WebElement element = null;
@@ -21,6 +18,7 @@ public class TaskPage {
         Thread.sleep(3000);
         basePage.clickToElement(driver, TaskPageUI.click_Contract);
         basePage.clickToElement(driver, TaskPageUI.select_Contract);
+        Thread.sleep(3000);
         basePage.clickToElement(driver, TaskPageUI.click_Point);
         basePage.clickToElement(driver, TaskPageUI.select_Point);
         basePage.clickToElement(driver, TaskPageUI.click_Assign);
@@ -37,5 +35,6 @@ public class TaskPage {
         basePage.sendKeyToElement(driver,TaskPageUI.deadline,deadline);
         basePage.clickToElement(driver, TaskPageUI.Recurring);
         basePage.clickToElement(driver, TaskPageUI.Save);
+        Thread.sleep(3000);
     }
 }
