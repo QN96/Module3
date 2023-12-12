@@ -13,7 +13,7 @@
         <parameter name="browserType" value="chrome"></parameter>
         <parameter name="appURL" value="https://demoqa.com/text-box"></parameter>
         <classes>
-            <class name="TH_Form.testcases.TC01_ReadFromExcel">
+            <class name="TH_Form.testcases.TC01_Json">
             </class>
         </classes>
     </test>

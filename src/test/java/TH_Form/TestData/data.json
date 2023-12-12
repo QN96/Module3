@@ -1,0 +1,16 @@
+{
+  "DemoQA_Registration_001_DataDriven": [
+    {
+      "fullName": "Nguyễn Văn Anh",
+      "email": "nvanh@gmail.com",
+      "address": "Cau Giay, Ha Noi",
+      "permanentAddress": "Cau Giay, Ha Noi"
+    },
+    {
+      "fullName": "Hoàng Tuấn Đạt",
+      "email": "htdat@gmail.com",
+      "address": "Tu Son, Bac Ninh",
+      "permanentAddress": "Tu Son, Bac Ninh"
+    }
+    ]
+}
