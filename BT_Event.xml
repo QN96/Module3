@@ -13,7 +13,7 @@
         <parameter name="browserType" value="chrome"></parameter>
         <parameter name="appURL" value="https://rise.fairsketch.com"></parameter>
         <classes>
-            <class name="BT_Event.testcases.TC01_ReadFromExcel">
+            <class name="BT_Event.testcases.TC01_Json">
             </class>
         </classes>
     </test>

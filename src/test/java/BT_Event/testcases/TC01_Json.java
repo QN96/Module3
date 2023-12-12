@@ -42,7 +42,7 @@ public class TC01_Json extends BaseTest {
         Map<String, String> testCaseFields = DemoReadJsonFile.getTestCaseFields("Test_case_01");
 
         // Sử dụng giá trị trong test case
-        EventPage.Event(driver, testCaseFields.get("title"), testCaseFields.get("description"), testCaseFields.get("startdate"), testCaseFields.get("starttime"),testCaseFields.get("enddate"),testCaseFields.get("endtime"),testCaseFields.get("locations"));
+        EventPage.Event(driver, testCaseFields.get("title"), testCaseFields.get("description"), testCaseFields.get("startdate"),testCaseFields.get("enddate"), testCaseFields.get("starttime"),testCaseFields.get("endtime"),testCaseFields.get("locations"));
     }
 
 
@@ -57,7 +57,7 @@ public class TC01_Json extends BaseTest {
         Map<String, String> testCaseFields = DemoReadJsonFile.getTestCaseFields("Test_case_02");
 
         // Sử dụng giá trị trong test case
-        EventPage.Event(driver, testCaseFields.get("title"), testCaseFields.get("description"), testCaseFields.get("startdate"), testCaseFields.get("starttime"),testCaseFields.get("enddate"),testCaseFields.get("endtime"),testCaseFields.get("locations"));
+        EventPage.Event(driver, testCaseFields.get("title"), testCaseFields.get("description"), testCaseFields.get("startdate"),testCaseFields.get("enddate"), testCaseFields.get("starttime"),testCaseFields.get("endtime"),testCaseFields.get("locations"));
     }
     @Test (priority = 5)
     public void Test_Home3() throws InterruptedException {
@@ -70,6 +70,6 @@ public class TC01_Json extends BaseTest {
         Map<String, String> testCaseFields = DemoReadJsonFile.getTestCaseFields("Test_case_03");
 
         // Sử dụng giá trị trong test case
-        EventPage.Event(driver, testCaseFields.get("title"), testCaseFields.get("description"), testCaseFields.get("startdate"), testCaseFields.get("starttime"),testCaseFields.get("enddate"),testCaseFields.get("endtime"),testCaseFields.get("locations"));
+        EventPage.Event(driver, testCaseFields.get("title"), testCaseFields.get("description"), testCaseFields.get("startdate"),testCaseFields.get("enddate"), testCaseFields.get("starttime"),testCaseFields.get("endtime"),testCaseFields.get("locations"));
     }
 }
