@@ -1,0 +1,47 @@
+{
+  "RISE_Login_001_Correct": [
+    {
+      "username": "admin@demo.com",
+      "password": "riseDemo"
+    }
+  ],
+    "RISE_Login_002_Correct":[
+    {
+      "username": "client@demo.com",
+      "password": "riseDemo"
+    }
+  ],
+  "Test_case_01": [
+    {
+      "title": "event 1",
+      "description": "Noel",
+      "startdate": "24-12-2023",
+      "enddate": "25-12-2023",
+      "starttime": "08:00",
+      "endtime": "09:00",
+      "locations": "ĐN"
+    }
+  ],
+  "Test_case_02": [
+    {
+      "title": "event 2",
+      "description": "Cưới",
+      "start": "1-3-2025",
+      "enddate": "3-3-2025",
+      "starttime": "01:00",
+      "endtime": "10:00",
+      "locations": "TH"
+    }
+  ],
+  "Test_case_03": [
+    {
+      "title": "bug 3",
+      "description": "Hỏi",
+      "start": "7-7-2024",
+      "enddate": "8-7-2024",
+      "starttime": "02:00",
+      "endtime": "12:00",
+      "locations": "TL"
+    }
+  ]
+}

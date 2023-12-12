@@ -9,7 +9,8 @@ public class HomePage {
     //menu
     static BasePage basePage=new BasePage();
     //Page Actions
-    public static void Home(WebDriver driver){
+    public static void Home(WebDriver driver) throws InterruptedException {
+        Thread.sleep(3000);
         basePage.clickToElement(driver,HomePageUI.eventMenu);
     }
 }
