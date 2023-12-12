@@ -18,12 +18,12 @@ public class EventPage {
         basePage.clickToElement(driver, EventPageUI.add_event);
         basePage.sendKeyToElement(driver,EventPageUI.add_title,title);
         basePage.sendKeyToElement(driver,EventPageUI.add_Description,Des);
+        Thread.sleep(3000);
         basePage.sendKeyToElement(driver, EventPageUI.start_date, startdate);
         basePage.sendKeyToElement2(driver, EventPageUI.start_time, starttime);
         basePage.sendKeyToElement(driver, EventPageUI.end_date, enddate);
         basePage.sendKeyToElement2(driver, EventPageUI.end_time, endtime);
         basePage.sendKeyToElement(driver, EventPageUI.add_location, locations);
-        //basePage.sendKeyToElement(driver, EventPageUI.labels, labels);
         basePage.clickToElement(driver, EventPageUI.client);
         basePage.clickToElement(driver, EventPageUI.option);
         basePage.clickToElement(driver, EventPageUI.dialog);
