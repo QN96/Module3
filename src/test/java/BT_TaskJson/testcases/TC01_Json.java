@@ -33,12 +33,8 @@ public class TC01_Json extends BaseTest {
     }
 
     @Test (priority = 1)
-    public void Test_Home() throws InterruptedException {
-        HomePage.Home(driver);
-    }
-
-    @Test (priority = 2)
     public void Test_case_01() throws InterruptedException {
+        HomePage.Home(driver);
         // Đọc giá trị từ file JSON
         Map<String, String> testCaseFields = DemoReadJsonFile.getTestCaseFields("Test_case_01");
 
@@ -47,26 +43,18 @@ public class TC01_Json extends BaseTest {
     }
 
 
-    @Test (priority = 3)
-    public void Test_Home2() throws InterruptedException {
-        HomePage.Home(driver);
-    }
-
-    @Test (priority = 4)
+    @Test (priority = 2)
     public void Test_case_02() throws InterruptedException {
+        HomePage.Home(driver);
         // Đọc giá trị từ file JSON
         Map<String, String> testCaseFields = DemoReadJsonFile.getTestCaseFields("Test_case_02");
 
         // Sử dụng giá trị trong test case
         TaskPage.Task(driver, testCaseFields.get("title"), testCaseFields.get("description"), testCaseFields.get("start"), testCaseFields.get("deadline"));
     }
-    @Test (priority = 5)
-    public void Test_Home3() throws InterruptedException {
-        HomePage.Home(driver);
-    }
-
-    @Test (priority = 6)
+    @Test (priority = 3)
     public void Test_case_03() throws InterruptedException {
+        HomePage.Home(driver);
         // Đọc giá trị từ file JSON
         Map<String, String> testCaseFields = DemoReadJsonFile.getTestCaseFields("Test_case_03");
 

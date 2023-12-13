@@ -372,7 +372,11 @@ public class BasePage {
         new WebDriverWait(driver,Duration.ofSeconds(15)).until(ExpectedConditions.alertIsPresent());
     }
 
-
+    // Thêm phương thức waitPopupModalInvisible với tham số là Duration
+    public void waitPopupModalInvisible(Duration timeout) {
+        WebDriverWait wait = new WebDriverWait(driver, timeout);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("your-modal-class-name")));
+    }
     public void waitForPageLoaded(){
         // wait for jQuery to loaded
         ExpectedCondition<Boolean> jQueryLoad = new ExpectedCondition<Boolean>() {
@@ -402,6 +406,5 @@ public class BasePage {
         } catch (Throwable error) {
             Assert.fail("Quá thời gian load trang.");
         }
-
     }
 }
