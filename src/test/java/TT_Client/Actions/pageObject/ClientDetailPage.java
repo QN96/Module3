@@ -13,8 +13,8 @@ public class ClientDetailPage {
         basePage.clickToElement(driver, ClientDetailPageUI.Clients);
 
         String totalClientsText = basePage.getElementText(driver, ClientDetailPageUI.Total_Clients);
-        String lastPart = totalClientsText.split("/")[1].trim();
-
-        System.out.println("Total Clients: " + lastPart);
+        String[] substrings = totalClientsText.split(" ");
+        String lastPart = substrings[substrings.length - 1];
+        System.out.println("Total client: " + lastPart);
     }
 }

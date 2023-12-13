@@ -4,7 +4,6 @@ import BT_TaskJson.Actions.commons.BaseTest;
 import BT_TaskJson.Actions.pageObject.HomePage;
 import BT_TaskJson.Actions.pageObject.LoginPage;
 import BT_TaskJson.Actions.pageObject.TaskPage;
-import BT_TaskJson.Utilities.Helpers.PropertiesFile;
 import BT_TaskJson.Utilities.Listeners.ReportListener;
 import BT_TaskJson.Utilities.Helpers.DemoReadJsonFile;
 import org.openqa.selenium.WebDriver;

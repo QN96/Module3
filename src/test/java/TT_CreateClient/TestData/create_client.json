@@ -1,0 +1,38 @@
+{
+  "RISE_Login_001_Correct": [
+    {
+      "username": "admin@demo.com",
+      "password": "riseDemo"
+    }
+  ],
+  "Test_case_01": [
+    {
+      "company_name": "CTS",
+      "Address": "88 Hoang Hoa Tham",
+      "City": "Da Nang",
+      "State": "Thanh Khe",
+      "Zip": "5000000",
+      "Country": "Viet Nam",
+      "Phone": "0989898989",
+      "Website": "https://github.com/",
+      "VAT": "123456789",
+      "GST": "987654321",
+      "symbol": "$"
+    }
+  ],
+  "Test_case_02": [
+    {
+      "name": "Nhu Quynh",
+      "Address": "56 Nguyen Van Linh",
+      "City": "TP.HCM",
+      "State": "Tan Binh",
+      "Zip": "6000000",
+      "Country": "Viet Nam",
+      "Phone": "0989898878",
+      "Website": "https://github.com/123",
+      "VAT": "66666666",
+      "GST": "9898799",
+      "symbol": "%"
+    }
+  ]
+}
