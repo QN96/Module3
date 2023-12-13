@@ -34,32 +34,30 @@ public class TC01_ReadFromExcel extends BaseTest {
     public void Test_Home1() throws InterruptedException {
         HomePage.Home(driver);
     }
-    @Test (priority = 2)
-    public void Test_event1() throws Exception {
-        ExcelHelpers excel=new ExcelHelpers();
+    @Test(priority = 2)
+    public void createEventsFromExcel() throws Exception {
+        ExcelHelpers excel = new ExcelHelpers();
         excel.setExcelFile("src/test/java/BT_Event/TestData/event.xlsx", "Sheet1");
-        EventPage.Event(driver, excel.getCellData("title",1),excel.getCellData("des",1),excel.getCellData("startdate",1),excel.getCellData("enddate",1),excel.getCellData("starttime",1),excel.getCellData("endtime",1),excel.getCellData("locations",1));
-        Thread.sleep(1000);    }
-    @Test (priority = 3)
-    public void Test_Home2() throws InterruptedException {
-        HomePage.Home(driver);
+
+        int numberOfEvents = 3; // Số lượng event cần tạo
+
+        for (int i = 1; i <= numberOfEvents; i++) {
+            createEvent(driver, excel, i);
+            Thread.sleep(1000); // Đợi để chắc chắn event trước đã được tạo xong
+            HomePage.Home(driver); // Quay lại trang Home
+        }
     }
-    @Test (priority = 4)
-    public void Test_event2() throws Exception {
-        ExcelHelpers excel=new ExcelHelpers();
-        excel.setExcelFile("src/test/java/BT_Event/TestData/event.xlsx", "Sheet1");
-        EventPage.Event(driver, excel.getCellData("title",2),excel.getCellData("des",2),excel.getCellData("startdate",2),excel.getCellData("enddate",2),excel.getCellData("starttime",2),excel.getCellData("endtime",2),excel.getCellData("locations",2));
-        Thread.sleep(1000);    }
-    @Test (priority = 5)
-    public void Test_Home3() throws InterruptedException {
-        HomePage.Home(driver);
+
+    private void createEvent(WebDriver driver, ExcelHelpers excel, int row) throws Exception {
+        EventPage.Event(driver,
+                excel.getCellData("title", row),
+                excel.getCellData("des", row),
+                excel.getCellData("startdate", row),
+                excel.getCellData("enddate", row),
+                excel.getCellData("starttime", row),
+                excel.getCellData("endtime", row),
+                excel.getCellData("locations", row));
     }
-    @Test (priority = 6)
-    public void Test_event3() throws Exception {
-        ExcelHelpers excel=new ExcelHelpers();
-        excel.setExcelFile("src/test/java/BT_Event/TestData/event.xlsx", "Sheet1");
-        EventPage.Event(driver, excel.getCellData("title",3),excel.getCellData("des",3),excel.getCellData("startdate",3),excel.getCellData("enddate",3),excel.getCellData("starttime",3),excel.getCellData("endtime",3),excel.getCellData("locations",3));
-        Thread.sleep(1000);    }
     @AfterClass
     public void afterTest() throws Exception {
         tearDown();
