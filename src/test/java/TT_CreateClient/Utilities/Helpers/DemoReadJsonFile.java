@@ -1,7 +1,6 @@
 package TT_CreateClient.Utilities.Helpers;
 
 import com.jayway.jsonpath.JsonPath;
-
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
@@ -26,6 +25,8 @@ public class DemoReadJsonFile {
         printTestCase("RISE_Login_001_Correct");
         printTestCase("Test_case_01");
         printTestCase("Test_case_02");
+        printTestCase("Test_case_03");
+        printTestCase("Test_case_04");
     }
 
     private static void printTestCase(String testCase) {

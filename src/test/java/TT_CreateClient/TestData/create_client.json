@@ -22,7 +22,36 @@
   ],
   "Test_case_02": [
     {
+      "company_name": "CTS2",
+      "Address": "888 Hoang Hoa Tham",
+      "City": "Da Nang",
+      "State": "Thanh Khe",
+      "Zip": "5000000",
+      "Country": "Viet Nam",
+      "Phone": "0989898989",
+      "Website": "https://github.com/",
+      "VAT": "123456789",
+      "GST": "987654321",
+      "symbol": "$"
+    }
+    ],
+  "Test_case_03": [
+    {
       "name": "Nhu Quynh",
+      "Address": "56 Nguyen Van Linh",
+      "City": "TP.HCM",
+      "State": "Tan Binh",
+      "Zip": "6000000",
+      "Country": "Viet Nam",
+      "Phone": "0989898878",
+      "Website": "https://github.com/123",
+      "VAT": "66666666",
+      "GST": "9898799",
+      "symbol": "%"
+    }],
+  "Test_case_04": [
+    {
+      "name": "My",
       "Address": "56 Nguyen Van Linh",
       "City": "TP.HCM",
       "State": "Tan Binh",

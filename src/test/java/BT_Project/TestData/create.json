@@ -1,0 +1,54 @@
+{
+  "login": [
+    {
+      "username": "admin@demo.com",
+      "password": "riseDemo"
+    }
+  ],
+  "label": [
+    {
+      "color": "#83c340",
+      "label": "LABO"
+    },
+    {
+      "color": "#29c2c2",
+      "label": "ProjectBase"
+    },
+    {
+      "color": "#aab7b7",
+      "label": "Product"
+    }
+  ],
+  "Project": [
+    {
+      "title": "Tester",
+      "des": "Dự án của những niềm vui",
+      "start_date": "20-12-2023",
+      "deadline_project": "20-12-2024",
+      "price": "5000",
+      "option": "Product"
+    },
+    {
+      "title": "HaoHao",
+      "des": "Dự án của những nỗi buồn",
+      "start_date": "21-12-2023",
+      "deadline_project": "25-12-2024",
+      "price": "4000",
+      "option": "ProjectBase"
+    },
+    {
+      "title": "Thanh Long",
+      "des": "Lần đầu tiên trái thanh long có trong mì tôm",
+      "start_date": "12-12-2023",
+      "deadline_project": "25-12-2023",
+      "price": "3000",
+      "option": "LABO"
+    }
+  ],
+  "Filter": [
+    {
+      "title_filter": "Thanh Long"
+    }
+
+  ]
+}
