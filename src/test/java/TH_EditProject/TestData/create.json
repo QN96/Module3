@@ -1,0 +1,25 @@
+{
+  "login": [
+    {
+      "username": "admin@demo.com",
+      "password": "riseDemo"
+    }
+  ],
+
+  "Project": [
+    {
+      "title": "Tester",
+      "des": "Dự án của những niềm vui",
+      "start_date": "20-12-2023",
+      "deadline_project": "20-12-2024",
+      "price": "5000",
+      "option": "Normal"
+    }
+  ],
+  "Filter": [
+    {
+      "status": "Open"
+    }
+
+  ]
+}
