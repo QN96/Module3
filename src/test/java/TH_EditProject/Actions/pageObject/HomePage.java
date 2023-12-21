@@ -1,7 +1,7 @@
 package TH_EditProject.Actions.pageObject;
 
-import BT_Project.Interfaces.HomePageUI;
-import BT_Project.Actions.commons.BasePage;
+import TH_EditProject.Interfaces.HomePageUI;
+import TH_EditProject.Actions.commons.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;

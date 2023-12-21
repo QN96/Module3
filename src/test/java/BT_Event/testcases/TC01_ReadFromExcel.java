@@ -12,6 +12,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import java.io.FileInputStream;
+
 @Listeners(TestListener.class)
 public class TC01_ReadFromExcel extends BaseTest {
     private WebDriver driver;
@@ -39,14 +41,22 @@ public class TC01_ReadFromExcel extends BaseTest {
         ExcelHelpers excel = new ExcelHelpers();
         excel.setExcelFile("src/test/java/BT_Event/TestData/event.xlsx", "Sheet1");
 
-        int numberOfEvents = 3; // Số lượng event cần tạo
+        int numberOfRows = excel.getRowCount("title");
 
-        for (int i = 1; i <= numberOfEvents; i++) {
+        for (int i = 1; i <= numberOfRows; i++) {
             createEvent(driver, excel, i);
             Thread.sleep(1000); // Đợi để chắc chắn event trước đã được tạo xong
             HomePage.Home(driver); // Quay lại trang Home
         }
+//        int numberOfEvents = 3; // Số lượng event cần tạo
+//
+//        for (int i = 1; i <= numberOfEvents; i++) {
+//            createEvent(driver, excel, i);
+//            Thread.sleep(1000); // Đợi để chắc chắn event trước đã được tạo xong
+//            HomePage.Home(driver); // Quay lại trang Home
+//        }
     }
+
 
     private void createEvent(WebDriver driver, ExcelHelpers excel, int row) throws Exception {
         EventPage.Event(driver,

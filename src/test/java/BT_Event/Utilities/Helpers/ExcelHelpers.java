@@ -100,6 +100,7 @@ public class ExcelHelpers {
             cell.setCellValue(text);
 
             fileOut = new FileOutputStream(excelFilePath);
+            System.out.println("In ra cell" +cell);
             wb.write(fileOut);
             fileOut.flush();
             fileOut.close();
@@ -108,5 +109,23 @@ public class ExcelHelpers {
             throw (e);
         }
     }
+    public int getRowCount(String columnName) throws Exception {
+        int columnIndex = columns.get(columnName);
+        int lastRowNum = sh.getLastRowNum();
+        int rowCount = 0;
+
+        for (int i = 1; i <= lastRowNum; i++) {
+            Row currentRow = sh.getRow(i);
+            if (currentRow != null) {
+                Cell currentCell = currentRow.getCell(columnIndex);
+                if (currentCell != null && !getCellData(i, columnIndex).isEmpty()) {
+                    rowCount++;
+                }
+            }
+        }
+
+        return rowCount;
+    }
+
 }
 

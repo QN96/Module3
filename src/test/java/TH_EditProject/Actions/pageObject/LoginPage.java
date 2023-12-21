@@ -1,8 +1,8 @@
 package TH_EditProject.Actions.pageObject;
 
-import BT_Project.Actions.commons.BasePage;
+import TH_EditProject.Actions.commons.BasePage;
 import org.openqa.selenium.WebDriver;
-import BT_Project.Interfaces.LoginPageUI;
+import TH_EditProject.Interfaces.LoginPageUI;
 
 public class LoginPage {
     WebDriver driver;
