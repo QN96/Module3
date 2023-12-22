@@ -48,13 +48,7 @@ public class TC01_ReadFromExcel extends BaseTest {
             Thread.sleep(1000); // Đợi để chắc chắn event trước đã được tạo xong
             HomePage.Home(driver); // Quay lại trang Home
         }
-//        int numberOfEvents = 3; // Số lượng event cần tạo
-//
-//        for (int i = 1; i <= numberOfEvents; i++) {
-//            createEvent(driver, excel, i);
-//            Thread.sleep(1000); // Đợi để chắc chắn event trước đã được tạo xong
-//            HomePage.Home(driver); // Quay lại trang Home
-//        }
+
     }
 
 

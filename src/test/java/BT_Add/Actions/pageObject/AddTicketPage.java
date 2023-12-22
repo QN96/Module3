@@ -9,7 +9,7 @@ public class AddTicketPage {
     private static WebElement element = null;
     private static BasePage basePage=new BasePage();
 
-    public static void Note(WebDriver driver, String title, String option, String Des, String option1,String option2) throws InterruptedException {
+    public static void Ticket(WebDriver driver, String title, String option, String Des, String option1,String option2) throws InterruptedException {
         basePage.clickToElement(driver, AddTicketPageUI.add_icon);
         basePage.clickToElement(driver, AddTicketPageUI.add_ticket);
         basePage.sendKeyToElement(driver,AddTicketPageUI.add_title,title);

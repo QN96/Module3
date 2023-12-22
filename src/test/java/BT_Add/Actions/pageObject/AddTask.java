@@ -11,7 +11,7 @@ public class AddTask {
     public static void Task(WebDriver driver, String title, String Des, String Related, String Contract, String Point, String Assign, String Collaborators, String Status, String Priority, String Labels, String start, String deadline ) throws InterruptedException {
         basePage.clickToElement(driver, AddTaskUI.add_icon);
         basePage.clickToElement(driver, AddTaskUI.add_Task);
-        basePage.sendKeyToElement(driver,AddTaskUI.add_title,title);
+        basePage.sendKeyToElement1(driver,AddTaskUI.add_title,title);
         basePage.sendKeyToElement1(driver,AddTaskUI.add_Description,Des);
         basePage.clickToElement(driver, AddTaskUI.click_Related);
         basePage.clickToElement(driver, AddTaskUI.select_Related(Related));
@@ -31,8 +31,8 @@ public class AddTask {
         basePage.clickToElement(driver, AddTaskUI.select_Priority(Priority));
         basePage.clickToElement(driver, AddTaskUI.click_Labels);
         basePage.clickToElement(driver, AddTaskUI.select_Labels(Labels));
-        basePage.sendKeyToElement(driver,AddTaskUI.start_date,start);
-        basePage.sendKeyToElement(driver,AddTaskUI.deadline,deadline);
+        basePage.sendKeyToElement1(driver,AddTaskUI.start_date,start);
+        basePage.sendKeyToElement1(driver,AddTaskUI.deadline,deadline);
         basePage.clickToElement(driver, AddTaskUI.Recurring);
         basePage.clickToElement(driver, AddTaskUI.Save);
     }

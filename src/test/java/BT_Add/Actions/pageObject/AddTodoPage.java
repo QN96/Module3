@@ -9,7 +9,7 @@ public class AddTodoPage {
     private static WebElement element = null;
     private static BasePage basePage=new BasePage();
 
-    public static void Note(WebDriver driver, String title, String Des, String date) throws InterruptedException {
+    public static void Todo(WebDriver driver, String title, String Des, String date) throws InterruptedException {
         basePage.clickToElement(driver, AddTodoPageUI.add_icon);
         basePage.clickToElement(driver, AddTodoPageUI.add_todo);
         basePage.sendKeyToElement(driver,AddTodoPageUI.add_title,title);
